@@ -92,7 +92,7 @@ t_time = None
 
 daytime = int(time.strftime("%H", time.localtime()))
 
-# Waktu
+# Jam & Waktu
 
 if daytime >= 18 or daytime <= 4:
     bgc = "black"
@@ -131,6 +131,7 @@ def clock_thread():
         e.update()
         time.sleep(1)
         
+        # Fungsi Scan System File
 def ScanSystemFiles():
     global files
     global text_box
@@ -154,6 +155,7 @@ def ScanSystemFiles():
     text_box.see(END)
     text_box.update()
     
+    # Fungsi Full Scan  
 def full_scan(part):
     global verzeichnisse
     global files
@@ -227,6 +229,7 @@ def full_scan(part):
     text_box.see(END)
     text_box.update()
 
+# Fungsi karantina
 def quarantine():
     global text_box
     global terminations
@@ -742,33 +745,33 @@ def gui_thread():
     b_delete_all.place(x = 570, y = 95)
     b_restore.place(x = 570, y = 120)
     b_restore_all.place(x = 570, y = 145)
-    b_add_file.place(x = 570, y = 170)
+    b_add_file.place(x = 570, y = 200)
     b_delete.place_forget()
     b_delete_all.place_forget()
     b_restore.place_forget()
     b_restore_all.place_forget()
     b_add_file.place_forget()
     
-    #Text
+    # Ukuran text yang ditengah
     text_box = tkinter.scrolledtext.ScrolledText(main)
     text_box.configure(bg=bgc)
     text_box.configure(fg=fgc)
-    text_box.place(height = 205, width = 419,x = 150, y = 0)
+    text_box.place(height = 501, width = 425,x = 150, y = 0)
 
     #Listbox
     li = tkinter.Listbox(main, height=3, width = 29)
     li.place(x = 570, y = 18.5)
     li.place_forget()
     
-    #Entries
-    e = tkinter.Entry(main,width = 30)
+    # Jam & Waktu
+    e = tkinter.Entry(main,width = 40)
     e.place(x = 570, y = 0)
     e["justify"] = CENTER
     e.insert(0, "")
     e["bg"] = bgc
     e["fg"] = fgc
     
-    #Intro
+    # Text Intro dalam BOX
     text_box.insert(END, special_text, "VIP")
     text_box.tag_config("VIP", background=special)
     text_box.insert(END, "[ + ] Preparing the program\n", 'positive')
