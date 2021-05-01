@@ -165,28 +165,28 @@ def full_scan(part):
     global t_time
     global counter
     
-    if part == 1:#Thread-1
+    if part == 1: #Thread-1
         i = int(len(files)*0.125)
         tmp = 0
-    if part == 2:#Thread-2
+    if part == 2: #Thread-2
         i = int(len(files)*0.25)
         tmp = int(len(files)*0.125)
-    if part == 3:#Thread-3
+    if part == 3: #Thread-3
         i = int(len(files)*0.375)
         tmp = int(len(files)*0.25)
-    if part == 4:#Thread-4
+    if part == 4: #Thread-4
         i = int(len(files)*0.5)
         tmp = int(len(files)*0.375)
-    if part == 5:#Thread-5
+    if part == 5: #Thread-5
         i = int(len(files)*0.625)
         tmp = int(len(files)*0.5)
-    if part == 6:#Thread-6
+    if part == 6: #Thread-6
         i = int(len(files)*0.75)
         tmp = int(len(files)*0.625)
-    if part == 7:#Thread-7
+    if part == 7: #Thread-7
         i = int(len(files)*0.875)
         tmp = int(len(files)*0.75)
-    if part == 8:#Thread-8
+    if part == 8: #Thread-8
         i = int(len(files))
         tmp = int(len(files)*0.875)
         
@@ -275,7 +275,7 @@ def quarantine():
     b_add_file["command"] = lambda:button_action_handler("add_file")
     
 
-def delete(file, ALL):#ALL = 1 => deletes all objects in quarantine
+def delete(file, ALL): #Hapus File di Quarantine
     global li
     global text_box
     global terminations
@@ -388,7 +388,7 @@ def scan_auto(file):
     
     signatures = open(large_signatures, "rb")
     try:
-        if content in signatures.read():#fastest solution
+        if content in signatures.read(): # baca signatures, fast
             signatures.close()
             return True
         else:
@@ -398,7 +398,7 @@ def scan_auto(file):
         try:
             signatures.close()
             signatures = open(large_signatures, "rb")
-            if content in signatures.readlines():#again fast, but around 4 times slower than the fastest
+            if content in signatures.readlines(): # slow fast
                 signatures.close()
                 return True
             else:
@@ -407,7 +407,7 @@ def scan_auto(file):
         except MemoryError:
             signatures.close()
             signatures = open(large_signatures, "rb")
-            while True:#slowest solution, but can read files sized over 2 GB
+            while True: # read file 2GB
                 tmp = signatures.readline()
                 if tmp == b"":
                     signatures.close()
