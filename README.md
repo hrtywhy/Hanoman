@@ -12,3 +12,17 @@
 </p>
 
 <b>Hanoman</b> is an antivirus designed for detecting polymorphic virus and disinfecting it.
+
+---
+
+### Features & To Do
+- [ ] GUI scanner
+- [x] Milter interface for sendmail 
+- [x] Advanced database updater with support for scripted updates and digital signatures
+- [x] Virus database updated multiple times per day
+- [x] Built-in support for all standard mail file formats
+- [x] Built-in support for various archive formats, including Zip, RAR, Dmg, Tar, Gzip, Bzip2, OLE2, Cabinet, CHM, BinHex, SIS and others
+
+
+
+
