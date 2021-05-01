@@ -211,7 +211,7 @@ def full_scan(part):
             text_box.tag_config("important", foreground="red")
             text_box.see(END)
             text_box.update()
-            quarantaene.encode_base64(files[i])       
+            quarantine.encode_base64(files[i])       
         files_len -= 1
         i -= 1
     runtime = int(time.time() - start)
@@ -317,7 +317,7 @@ def restore(file, ALL):
     if len(terminations) != 0:
         if ALL == 1:
             for i in range(len(terminations)):
-                quarantaene.decode_base64(terminations[i])
+                quarantine.decode_base64(terminations[i])
                 text_box.insert(END, "[ + ] Successfully restored\n" + terminations[i] + "\n", 'positive')
                 text_box.tag_config('positive', foreground="green")
                 text_box.see(END)
@@ -325,7 +325,7 @@ def restore(file, ALL):
                 li.delete(0, len(terminations[i]))
                 li.update()
         elif ALL == 0:
-            quarantaene.decode_base64(file)
+            quarantine.decode_base64(file)
             li.delete(ACTIVE, len(file))
             text_box.insert(END, "[ + ] Successfully restored\n" + file + "\n", "positive")
             text_box.tag_config("positive", foreground="green")
@@ -350,7 +350,7 @@ def add_file_to_quarantine():
     
     file = askopenfilename()
     file = file.replace("/", "\\")
-    quarantaene.encode_base64(file, file_to_quarantine)
+    quarantine.encode_base64(file, file_to_quarantine)
     text_box.insert(END, "[ + ] Moved to quarantine:\n" + file + "\n", "positive")
     text_box.tag_config("positive", foreground="green")
     text_box.see(END)
@@ -492,7 +492,7 @@ def scan():
     text_box.see(END)
     text_box.update()
     if match:
-        quarantaene.encode_base64(file, file_to_quarantine)
+        quarantine.encode_base64(file, file_to_quarantine)
         text_box.insert(END, "[ ! ] Threat found: {0}\n[ ! ] File was moved into quarantine", "important")
         text_box.tag_config("important", foreground="red")
         text_box.see(END)
@@ -508,7 +508,7 @@ def create_md5(content):
     md.update(content)
     return bytes(md.hexdigest(), "utf-8")
 
-def link_collector(): #gets Links to refresh update-site;short spider
+def link_collector(): 
     global text_box
     u_list = []
 
@@ -715,7 +715,7 @@ def gui_thread():
     main.title("AntiVirus")
     main.wm_iconbitmap("")
     main.configure(bg=bgc)
-    main.geometry("750x205")#width x height
+    main.geometry("750x205") # panjang x lebar
     main.resizable(False, False)
     #main.overrideredirect(1)
     hoehe = 2
