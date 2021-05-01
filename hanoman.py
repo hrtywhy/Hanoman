@@ -452,9 +452,9 @@ def scan():
         return None
 
     signatures = open(large_signatures, "rb")
-    #runtime of a scan varies from system to system(time on the systems tested: 1s <= t <= 20s)
+    # scan varies from system to system=
     try:
-        if content in signatures.read():#fastest solution
+        if content in signatures.read(): # baca signatures, fast
             signatures.close()
             match = True
         else:
@@ -464,7 +464,7 @@ def scan():
         try:
             signatures.close()
             signatures = open(large_signatures, "rb")
-            if content in signatures.readlines():#again fast, but around 4 times slower than the fastest
+            if content in signatures.readlines(): # slow fast
                 f.close()
                 match = True
             else:
@@ -473,7 +473,7 @@ def scan():
         except MemoryError:
             signatures.close()
             signatures = open(large_signatures, "rb")
-            while True:#slowest solution, but can read files sized over 2 GB
+            while True: # read file 2GB
                 tmp = signatures.readline()
                 if tmp == b"":
                     signatures.close()
