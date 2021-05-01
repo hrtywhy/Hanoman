@@ -92,8 +92,8 @@ t_time = None
 
 daytime = int(time.strftime("%H", time.localtime()))
 
-#Adjusting the brightness for the current day_time
-#It's totally unnecessary but I wanted to play around a little
+#Tambah Day Time
+
 if daytime >= 18 or daytime <= 4:
     bgc = "black"
     fgc = "white"
