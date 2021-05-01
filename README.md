@@ -11,14 +11,16 @@
 <img width="350" src="https://user-images.githubusercontent.com/44236850/116784675-c7a6b980-aabf-11eb-8fd8-78dfa6a03dd7.png "</a>
 </p>
 
-<b>Hanoman</b> is an antivirus designed for detecting polymorphic virus and disinfecting it.
+<b>Hanoman</b> is an GUI antivirus engine singature based. The signatures that the Hanoman uses come from [VirusShare](https://virusshare.com/)
 
 ---
 
 ### Features & To Do
 - [x] GUI scanner
-- [ ] Milter interface for sendmail 
-- [ ] Advanced database updater with support for scripted updates and digital signatures
+- [x] Directory Scan
+- [x] Full Scan
+- [x] Quarantine
+- [ ] Advanced database update with support for scripted updates and digital signatures
 - [ ] Virus database updated multiple times per day
 - [ ] Built-in support for all standard mail file formats
 - [ ] Built-in support for various archive formats, including Zip, RAR, 7zip, Gzip,  and others

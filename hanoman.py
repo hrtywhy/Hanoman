@@ -92,7 +92,7 @@ t_time = None
 
 daytime = int(time.strftime("%H", time.localtime()))
 
-#Tambah Day Time
+# Waktu
 
 if daytime >= 18 or daytime <= 4:
     bgc = "black"
