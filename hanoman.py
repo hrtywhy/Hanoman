@@ -715,7 +715,7 @@ def gui_thread():
     main.title("Hanoman")
     main.wm_iconbitmap("")
     main.configure(bg=bgc)
-    main.geometry("750x205") # panjang x lebar
+    main.geometry("800x500") # panjang x lebar
     main.resizable(False, False)
     #main.overrideredirect(1)
     hoehe = 2

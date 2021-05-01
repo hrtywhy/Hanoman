@@ -1,1 +1,2 @@
 http://virusshare.com/hashes/<title>VirusShare.com</title>
+http://virusshare.com/hashes/hashfiles/VirusShare_00000.md5
