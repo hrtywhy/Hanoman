@@ -25,18 +25,18 @@ terminations = []
 
 
 if "win" in os_name:
-    if not os.path.exists("AntiVirus\\Quarantine\\"):
-        os.makedirs("AntiVirus\\Quarantine\\")
-    if not os.path.exists("AntiVirus\\sf\\"):
-        os.makedirs("AntiVirus\\sf\\")
-    if not os.path.exists("AntiVirus\\Large_Update_File\\"):
-        os.makedirs("AntiVirus\\Large_Update_File")
-    quarantine_folder = "AntiVirus\\Quarantine\\*"
-    file_to_quarantine = "AntiVirus\\Quarantine\\"
-    partitionen_folder = "AntiVirus\\sf\\sf.txt"
-    links_current = "AntiVirus\\Large_Update_File\\links_current.txt"
-    links_downloaded = "AntiVirus\\Large_Update_File\\links_downloaded.txt"
-    large_signatures = "AntiVirus\\Large_Update_File\\signatures.txt"
+    if not os.path.exists("Signature\\Quarantine\\"):
+        os.makedirs("Signature\\Quarantine\\")
+    if not os.path.exists("Signature\\sf\\"):
+        os.makedirs("Signature\\sf\\")
+    if not os.path.exists("Signature\\Large_Update_File\\"):
+        os.makedirs("Signature\\Large_Update_File")
+    quarantine_folder = "Signature\\Quarantine\\*"
+    file_to_quarantine = "Signature\\Quarantine\\"
+    partitionen_folder = "Signature\\sf\\sf.txt"
+    links_current = "Signature\\Large_Update_File\\links_current.txt"
+    links_downloaded = "Signature\\Large_Update_File\\links_downloaded.txt"
+    large_signatures = "Signature\\Large_Update_File\\signatures.txt"
     f = open(partitionen_folder, "a")
     f.close()
     f = open(links_current, "a")
@@ -46,18 +46,18 @@ if "win" in os_name:
     f = open(large_signatures, "a")
     f.close()
 else:
-    if not os.path.exists("AntiVirus//Quarantine//"):
-        os.makedirs("AntiVirus//Quarantine//")
-    if not os.path.exists("AntiVirus//sf//"):
-        os.makedirs("AntiVirus//sf//")
-    if not os.path.exists("AntiVirus//Large_Update_File//"):
-        os.makedirs("AntiVirus//Large_Update_File//")
-    quarantine_folder = "AntiVirus//Quarantine//*"
-    file_to_quarantine = "AntiVirus//Quarantine//"
-    partitionen_folder = "AntiVirus//sf//sf.txt"
-    links_current = "AntiVirus//Large_Update_File//links_current.txt"
-    links_downloaded = "AntiVirus//Large_Update_File//links_downloaded.txt"
-    large_signatures = "AntiVirus//arge_Update_File//signatures.txt"
+    if not os.path.exists("Signature//Quarantine//"):
+        os.makedirs("Signature//Quarantine//")
+    if not os.path.exists("Signature//sf//"):
+        os.makedirs("Signature//sf//")
+    if not os.path.exists("Signature//Large_Update_File//"):
+        os.makedirs("Signature//Large_Update_File//")
+    quarantine_folder = "Signature//Quarantine//*"
+    file_to_quarantine = "Signature//Quarantine//"
+    partitionen_folder = "Signature//sf//sf.txt"
+    links_current = "Signature//Large_Update_File//links_current.txt"
+    links_downloaded = "Signature//Large_Update_File//links_downloaded.txt"
+    large_signatures = "Signature//arge_Update_File//signatures.txt"
     f = open(partitionen_folder, "a")
     f.close()
     f = open(links_current, "a")
@@ -712,7 +712,7 @@ def gui_thread():
     global special_text
                         
     main = tkinter.Tk()
-    main.title("AntiVirus")
+    main.title("Hanoman")
     main.wm_iconbitmap("")
     main.configure(bg=bgc)
     main.geometry("750x205") # panjang x lebar
