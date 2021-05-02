@@ -40,6 +40,8 @@ root@plankton: main.py
 - [ ] Built-in support for all standard mail file formats
 - [ ] Built-in support for various archive formats, including Zip, RAR, 7zip, Gzip,  and others
 
+<br>
+<br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/44236850/116824693-c0fa6e00-abb5-11eb-9f3d-be8fea410c58.png"</a>
 </p>
