@@ -30,7 +30,7 @@ git clone https://github.com/hrtywhy/Hanoman.git
 
 ## Usage
 ```
-root@plankton: main.py
+root@plankton: hanoman.py
 ```
 
 ## To Do
