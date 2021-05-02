@@ -8,7 +8,6 @@
 
 ### Anti-Malware Engine 
 
-
 <p align="center">
 <img width="350" src="https://user-images.githubusercontent.com/44236850/116784675-c7a6b980-aabf-11eb-8fd8-78dfa6a03dd7.png "</a>
 </p>
@@ -17,16 +16,29 @@
 
 ---
 
-### Features & To Do
-- [x] GUI scanner
-- [x] Directory Scan
-- [x] Full Scan
-- [x] Quarantine
+## Features 
+- GUI Scanner
+- Directory Scan
+- Computer Scan
+- Quarantine
+
+## Installation
+```bash
+# Clone this repo
+git clone https://github.com/hrtywhy/Hanoman.git
+```
+
+## Usage
+```
+root@plankton: main.py
+```
+
+## To Do
 - [ ] Advanced database update with support for scripted updates and digital signatures
 - [ ] Virus database updated multiple times per day
 - [ ] Built-in support for all standard mail file formats
 - [ ] Built-in support for various archive formats, including Zip, RAR, 7zip, Gzip,  and others
 
-
-
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/44236850/116824693-c0fa6e00-abb5-11eb-9f3d-be8fea410c58.png"</a>
+</p>
