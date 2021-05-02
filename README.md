@@ -34,6 +34,7 @@ root@plankton: main.py
 ```
 
 ## To Do
+- [ ] Update UI
 - [ ] Advanced database update with support for scripted updates and digital signatures
 - [ ] Virus database updated multiple times per day
 - [ ] Built-in support for all standard mail file formats
