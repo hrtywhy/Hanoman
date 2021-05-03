@@ -23,8 +23,8 @@
 <img width="650"src="https://user-images.githubusercontent.com/44236850/116824693-c0fa6e00-abb5-11eb-9f3d-be8fea410c58.png"</a>
 </p>
 
-### What's Hanoman?
-<b>Hanoman</b> is an GUI antivirus engine singature based. The signatures that the Hanoman uses come from [VirusShare](https://virusshare.com/)
+## What's Hanoman?
+<b><i>Hanoman</i></b> is an GUI antivirus engine singature based. The signatures that the Hanoman uses come from [VirusShare](https://virusshare.com/)
 
 ---
 
