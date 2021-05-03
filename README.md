@@ -31,7 +31,7 @@
 ## Features 
 - GUI Scanner
 - Directory Scan
-- Computer Scan
+- Full Scan
 - Quarantine
 
 ## Installation
@@ -51,5 +51,5 @@ root@plankton: hanoman.py
 - [ ] Virus database updated multiple times per day
 - [ ] Built-in support for all standard mail file formats
 - [ ] Built-in support for various archive formats, including Zip, RAR, 7zip, Gzip,  and others
-
+- [ ] History Scan
 
