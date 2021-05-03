@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/hrtywhy/Hanoman"><img width="280" src="https://user-images.githubusercontent.com/44236850/116784675-c7a6b980-aabf-11eb-8fd8-78dfa6a03dd7.png" alt="Hanoman"></a>
+  <a href="https://github.com/hrtywhy/Hanoman"><img width="200" src="https://user-images.githubusercontent.com/44236850/116784675-c7a6b980-aabf-11eb-8fd8-78dfa6a03dd7.png" alt="Hanoman"></a>
   <br>
   Hanoman
   <br>
