@@ -3,3 +3,4 @@ http://virusshare.com/hashes/hashfiles/VirusShare_00000.md5
 http://virusshare.com/hashes/hashfiles/VirusShare_00001.md5
 http://virusshare.com/hashes/hashfiles/VirusShare_00002.md5
 http://virusshare.com/hashes/hashfiles/VirusShare_00003.md5
+http://virusshare.com/hashes/hashfiles/VirusShare_00004.md5
