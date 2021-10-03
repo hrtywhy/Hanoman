@@ -57,7 +57,7 @@ else:
     partitionen_folder = "signature//sf//sf.txt"
     links_current = "signature//Large_Update_File//links_current.txt"
     links_downloaded = "signature//Large_Update_File//links_downloaded.txt"
-    large_signatures = "signature//arge_Update_File//signatures.txt"
+    large_signatures = "signature//Large_Update_File//signatures.txt"
     f = open(partitionen_folder, "a")
     f.close()
     f = open(links_current, "a")
